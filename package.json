@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "tailwind.config.js",
+  "homepage": "https://tibodw.github.io/visitAntje.github.io/src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"npx tailwindcss -i ./styles/tailwind.css -o ./styles/output.css --watch"
+    "dev": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/output.css --watch",
+    "predeploy": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/output.css",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
 }
